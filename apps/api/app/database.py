@@ -11,10 +11,11 @@ import os
 # SQLite 数据库路径
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./payments.db")
 
-# 创建引擎
+# 创建引擎（仅 SQLite 需要 check_same_thread）
+connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
 engine = create_engine(
     DATABASE_URL,
-    connect_args={"check_same_thread": False},  # SQLite 需要这个参数
+    connect_args=connect_args,
     echo=False  # 设置为 True 可以看到 SQL 日志
 )
 
