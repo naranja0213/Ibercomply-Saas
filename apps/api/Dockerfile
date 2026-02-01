@@ -22,5 +22,6 @@ COPY . .
 EXPOSE 8000
 
 # 启动命令（生产模式，无 --reload）
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --workers 1"]
+
 
