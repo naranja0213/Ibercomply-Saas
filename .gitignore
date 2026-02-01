@@ -46,3 +46,7 @@ Thumbs.db
 *.log
 logs/
 
+# Temp artifacts
+tmp_*.json
+tmp_*.pdf
+
