@@ -13,7 +13,7 @@ export default function LandingPage() {
         <section className="relative pt-8 pb-16 px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent leading-tight">
-            伊贝合规风险评估与决策辅助平台,幫你判判断处在哪个合规风险阶段
+            伊贝合规风险评估与决策辅助平台,幫你判断处在哪个合规风险阶段
             </h1>
             
             <p className="text-lg text-gray-300 mb-8">
